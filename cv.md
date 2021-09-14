@@ -13,6 +13,12 @@
 * even more (I hope in the near future)
 
 **Code Examples:**
+```javascript
+    if (str[i] == stack[stack.length - 1]) {
+          stack.pop();
+          continue;
+        } 
+```
 
 **English:** A2
 
