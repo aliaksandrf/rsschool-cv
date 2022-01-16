@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./img/svg-icons/favicon.jpg">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="wrapper header">            
+            <svg class="logo-icon">
+                <use xlink:href="./img/svg-icons/logo-svg.svg#logo-icons"></use>
+            </svg>
+            <nav class="header__navigation">
+                <ul class="navigation-item">
+                    <li class="header__links"><a href="#skills">Skills</a></li>             
+                    <li class="header__links"><a href="#portfolio">Portfolio</a></li>
+                    <li class="header__links"><a href="#video">Video</a></li>
+                    <li class="header__links"><a href="#price">Price</a></li>                    
+                    <li class="header__links"><a href="#contacts">Contacts</a></li>                        
+                </ul>
+            </nav>
+            <div class="header__language">
+                <span class="header__language_choose header__language_colored ">en</span>
+                <object data="./img/icons/header-slash.svg" type="image/svg+xml" class="header__language_slash">
+                    Your browser does not support SVG
+                </object>
+                <span class="header__language_choose">ru</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="wrapper">
+            <div class="hero-container">
+                <h1 class="hero__title">Alexa Rise</h1>
+                <p class="hero__content">Save sincere emotions, romantic feelings and<br>
+                    happy moments of life together with professional
+                     photographer Alexa Rise</p>
+                <button class="button button_colored hero__button">Hire me</button>                
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrapper skills">
+                <div class="title-container">
+                    <h2 class="section-title">Skills</h2>
+                </div>            
+            <div class="layout-4-column">
+                <div class="skills__card">
+                    <object data="./img/svg-icons/photo-1.svg" type="image/svg+xml" class="skill-icon skill-icon-photo">
+                        Your browser does not support SVG
+                    </object>    
+
+                    <h4 class="skills__card-title">Digital photography</h4>
+                    <p class="skills__card-content">High-quality photos in the studio and on the nature</p>
+                </div>
+                <div class="skills__card">
+                    <object data="./img/svg-icons/video-1.svg" type="image/svg+xml" class="skill-icon skill-icon-video">
+                        Your browser does not support SVG
+                    </object>    
+                    <h4 class="skills__card-title">Video shooting</h4>
+                    <p class="skills__card-content">Capture your moments so that they always stay with you</p>
+                </div>
+                <div class="skills__card">
+                    <object data="./img/svg-icons/landscape-1.svg" type="image/svg+xml" class="skill-icon skill-icon-landscape">
+                        Your browser does not support SVG
+                    </object>    
+                    <h4 class="skills__card-title">Retouch</h4>
+                    <p class="skills__card-content">I strive to make photography surpass reality</p>
+                </div>
+                <div class="skills__card">
+                    <object data="./img/svg-icons/microphone-1.svg" type="image/svg+xml" class="skill-icon skill-icon-audio">
+                        Your browser does not support SVG
+                    </object>      
+                    <h4 class="skills__card-title">Audio</h4>
+                    <p class="skills__card-content">Professional sounds recording for video, advertising, portfolio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">        
+        <div class="wrapper">
+            <div class="title-container">
+                <h2 class="section-title">Portfolio</h2>
+            </div>            
+            <div class="portfolio__buttons-block">
+                <button class="button button_bordered">Winter</button>
+                <button class="button button_bordered">Spring</button>
+                <button class="button button_bordered">Summer</button>
+                <button class="button button_colored">Autumn</button>
+            </div>
+            <div class="portfolio__image">
+                <img src="/img/portfolio/portfolio-img.jpg" alt="picture">
+                <img src="/img/portfolio/portfolio-img-1.jpg" alt="picture">
+                <img src="/img/portfolio/portfolio-img-2.jpg" alt="picture">
+                <img src="/img/portfolio/portfolio-img-3.jpg" alt="picture">
+                <img src="/img/portfolio/portfolio-img-4.jpg" alt="picture">
+                <img src="/img/portfolio/portfolio-img-5.jpg" alt="picture">
+            </div>
+        </div>
+    </section>
+    <section class="video" id="video">
+        <div class="wrapper">
+            <div class="title-container">
+                <h2 class="section-title">Video</h2>
+            </div>
+            <div class="video__player">
+                <img src="./img/video/video-player.jpg" alt="picture">                
+                <button class="button-video button-svg">
+                    <svg class="svg-video">
+                        <use xlink:href="./img/svg-icons/play-button-sprite.svg#Play_hover"></use>
+                    </svg>
+                </button>             
+            </div>
+        </div>
+    </section>
+    <section class="price" id="price">
+        <div class="wrapper">
+            <div class="title-container">
+                <h2 class="section-title">Price</h2>
+            </div>             
+            <div class="layout-3-column">
+                <div class="price__card">
+                    <h3 class="price__card-title">Standard</h3>
+                    <p class="price__card-costs">500 $</p>
+                    <div class="price__card_content-block">
+                        <span class="price__card-content">One location</span>
+                        <span class="price__card-content">120 photos in color</span>
+                        <span class="price__card-content">12 photos in retouch</span>
+                        <span class="price__card-content">Readiness 2-3 weeks</span>
+                        <span class="price__card-content">Make up, visage</span>
+                    </div>
+                    <div class="price__card_button">
+                        <button class="button button_colored">Order shooting</button>
+                    </div>                    
+                </div>
+                <div class="price__card">
+                    <h3 class="price__card-title">Premium</h3>
+                    <p class="price__card-costs">700 $</p>
+                    <div class="price__card_content-block">
+                        <span class="price__card-content">One or two locations</span>
+                        <span class="price__card-content">200 photos in color</span>
+                        <span class="price__card-content">20 photos in retouch</span>
+                        <span class="price__card-content">Readiness 1-2 weeks</span>
+                        <span class="price__card-content">Make up, visage</span>
+                    </div>
+                    <div class="price__card_button">
+                        <button class="button button_colored">Order shooting</button>
+                    </div>   
+                </div>
+                <div class="price__card">
+                    <h3 class="price__card-title">Gold</h3>
+                    <p class="price__card-costs">1000 $</p>
+                    <div class="price__card_content-block">
+                        <span class="price__card-content">Three locations or more</span>
+                        <span class="price__card-content">300 photos in color</span>
+                        <span class="price__card-content">50 photos in retouch</span>
+                        <span class="price__card-content">Readiness 1 week</span>
+                        <span class="price__card-content">Make up, visage, hairstyle</span>                        
+                    </div>
+                    <div class="price__card_button">
+                        <button class="button button_colored">Order shooting</button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="wrapper contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Contact me</h2>
+                <form class="contact__form-container">
+                    <div class="contact-form">
+                        <label for="contact-mail">
+                            <input type="email" placeholder="E-mail" class="input-field" id="contact-mail">
+                        </label>
+                    </div>
+                    <div class="contact-form">
+                        <label for="contact-phone">
+                            <input type="tel" placeholder="Phone" class="input-field" id="contact-phone">
+                        </label>
+                    </div>
+                    <div class="contact-form">
+                        <textarea name="contact" cols="30" rows="10" placeholder="Message" class="contact-form_textarea"></textarea>
+                    </div>
+                    <div class="contact-form_button">
+                        <button class="button button_colored">Send message</button>
+                    </div>                                    
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper footer-container">
+            <div class="layout-3-column">
+                <div>
+                    <span class="footer__content">&copy;</span>
+                    <time class="footer__content-plus">2022</time>
+                    <a href="https://github.com/aliaksandrf" class="footer__content">github</a>
+                </div>
+                <p class="footer__content-rsshool">
+                    <a href="https://rs.school/js-stage0">Rolling Scopes School</a>
+                </p>
+                <div>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item">
+                            <svg class="footer-icon">
+                                <use xlink:href="./img/svg-icons/footer-instagram-1.svg#instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="footer__nav-item">
+                            <svg class="footer-icon">
+                                <use xlink:href="./img/svg-icons/footer-facebook-2.svg#facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="footer__nav-item">
+                            <svg class="footer-icon">
+                                <use xlink:href="./img/svg-icons/footer-twitter-3.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="footer__nav-item">
+                            <svg class="footer-icon">
+                                <use xlink:href="./img/svg-icons/footer-pinterest-4.svg#pinterest"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
