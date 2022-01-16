@@ -268,6 +268,43 @@ a:hover::before {
   padding-top: 25px;
 }
 
+@media (max-width: 768px) {
+  .footer__content {
+    font-size: 2rem;
+    line-height: 2.42rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .footer__content-plus {
+    font-size: 2rem;
+    line-height: 2.42rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .footer__content-rsshool {
+    font-size: 2rem;
+    line-height: 2.42rem;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 20px;
+  }
+
+  .footer__nav-item {
+    display: inline-block;
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  .footer-container {
+    padding-top: 25px;
+  }
+
+  .footer__first-element {
+    padding-left: 40px;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -319,6 +356,55 @@ a:hover::before {
   margin-top: 5px;
 }
 
+.adaptive__menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .adaptive__menu {
+    display: block;
+    cursor: pointer;
+  }
+  .adaptive__menu:hover .burger_line {
+    background-color: #bdae82;
+    transition: all 0.5s;
+  }
+
+  .burger_line {
+    display: block;
+    background-color: white;
+    width: 50px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .is-active .burger_line {
+    background-color: red;
+  }
+
+  #hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  #hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+  }
+}
 .layout-4-column {
   display: flex;
   justify-content: space-between;
@@ -333,6 +419,12 @@ a:hover::before {
   padding-top: 25px;
 }
 
+@media (max-width: 768px) {
+  .layout-3-column {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .contact {
   padding-top: 100px;
   background-image: url(../img/contacts/contacts.jpg);
