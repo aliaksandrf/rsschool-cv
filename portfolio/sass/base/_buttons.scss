@@ -1,0 +1,31 @@
+.button {
+    width: 220px;
+    height: 55px;
+    @include font(2rem, 4rem, 400, normal);
+}
+
+.button_colored{
+    background: $color-gold;
+    color: $color-primary;
+
+    &:hover{
+        color: $color-light;
+        transition: .5s;
+    }
+}
+
+.button_bordered{
+    background: $color-primary;
+    border: 1px solid $color-gold;
+    color: $color-gold;
+}
+
+.button_price{
+    margin: 0 auto;
+}
+
+.button-video{
+    border: none;
+    background: transparent;
+}
+

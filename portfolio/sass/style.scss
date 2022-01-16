@@ -1,0 +1,29 @@
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+
+//base
+@import "base/fonts";
+@import "base/constants";
+@import "base/base";
+@import "base/icons";
+@import "base/buttons";
+
+//layouts
+@import "layouts/wrapper";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/layouts";
+
+//components
+@import "components/contacts";
+@import "components/hero";
+@import "components/portfolio";
+@import "components/price";
+@import "components/skills";
+@import "components/video";
+
+
+
+
+

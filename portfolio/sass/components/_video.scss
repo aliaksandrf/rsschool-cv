@@ -1,0 +1,30 @@
+.video__player{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.button-svg{
+    position: absolute;    
+    display: inline-block;
+    
+
+}
+
+.svg-video{
+    width: 130px;
+    height: 130px;
+    fill: #ffffff;   
+}
+
+.svg-video:hover{
+    fill: $color-gold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+
