@@ -1,0 +1,56 @@
+.contact{
+    padding-top: 100px;
+    background-image: url(/img/contacts/contacts.jpg);
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    height: 800px;
+    
+}
+
+.contact-container{
+    margin-left: auto;
+    padding-top: 28px;
+    width: 450px;
+}
+
+.contact-title{
+    padding: 0;
+    
+}
+
+.contact__form-container{
+    margin-top: -12px;
+}
+
+.contact-form{
+    padding-top: 20px;
+    background: transparent;
+    
+}
+
+.input-field{
+    width: 450px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid $color-gold;
+    border-radius: 0px;
+}
+
+.input-field::placeholder, .contact-form_textarea::placeholder{
+    padding-left: 20px;
+    color: $color-gold;
+    @include font(2rem, 4rem, 400, normal);
+}
+
+.contact-form_textarea{
+    width: 450px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid $color-gold;
+    border-radius: 0px;
+}
+
+.contact-form_button{
+    padding-top: 27px;
+}
+
