@@ -1,0 +1,27 @@
+.main {
+    display:flex;
+    justify-content: space-between;    
+}
+
+.contacts__list{ 
+    margin-top: 0.5rem;
+}
+
+.contact__content{
+    text-align: center;
+}
+
+.link-content {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link-content:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+
+.about-me__content {
+    text-indent: 1rem;
+}
