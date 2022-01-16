@@ -481,6 +481,33 @@ a:hover::before {
   padding-top: 27px;
 }
 
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 0 auto;
+  }
+
+  .contact-title {
+    font-size: 3.2rem;
+    line-height: 6.4rem;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form_button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact {
+    padding-top: 100px;
+    background-image: url(../../img/contacts/contacts-small.jpg);
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+}
 .hero {
   background: url(../img/header/background-header.jpg);
   background-repeat: no-repeat;
