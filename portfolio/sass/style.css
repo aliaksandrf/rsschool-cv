@@ -624,6 +624,10 @@ a:hover::before {
   padding-top: 27px;
 }
 
+.video-player-small {
+  display: none;
+}
+
 .button-svg {
   position: absolute;
   display: inline-block;
@@ -639,6 +643,16 @@ a:hover::before {
   fill: #bdae82;
   transition: 0.5s;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .video-player-big {
+    display: none;
+  }
+
+  .video-player-small {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

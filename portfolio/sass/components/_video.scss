@@ -6,6 +6,10 @@
     padding-top: 27px;
 }
 
+.video-player-small{
+    display: none;
+}
+
 .button-svg{
     position: absolute;    
     display: inline-block;
@@ -25,6 +29,15 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .video-player-big{
+        display: none;
+    }
+
+    .video-player-small{
+        display: inline;
+    }
+}
 
 
 
