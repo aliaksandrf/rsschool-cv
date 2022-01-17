@@ -171,6 +171,11 @@ a:hover::before {
   background: transparent;
 }
 
+@media (max-width: 768px) {
+  .button {
+    margin-top: 5px;
+  }
+}
 .wrapper {
   max-width: 1440px;
   margin: auto;
@@ -204,6 +209,11 @@ a:hover::before {
   margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .title-container {
+    max-width: 364px;
+  }
+}
 /* .title-container {
     max-width: 700px;
     margin: 0 auto;
@@ -549,6 +559,16 @@ a:hover::before {
   margin-top: -8px;
 }
 
+@media (max-width: 768px) {
+  .portfolio__image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio__buttons-block {
+    max-width: 445px;
+  }
+}
 .price__card {
   padding: 12px 12px 40px 12px;
   width: 450px;

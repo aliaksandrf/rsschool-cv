@@ -17,3 +17,16 @@
 .portfolio{
     margin-top: -8px;
 }
+
+@media (max-width: 768px) {
+    .portfolio__image{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__buttons-block{        
+        max-width: 445px;        
+    }
+
+
+}
