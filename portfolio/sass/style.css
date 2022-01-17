@@ -434,6 +434,10 @@ a:hover::before {
     flex-direction: column;
     align-items: center;
   }
+
+  .layout-4-column {
+    flex-wrap: wrap;
+  }
 }
 .contact {
   padding-top: 100px;
