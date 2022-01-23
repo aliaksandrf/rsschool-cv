@@ -17,21 +17,24 @@
 }
 
 @media (max-width: 768px) {
-    .hero__content{
-        padding-top: 20px;
-        padding-bottom: 60px;
-        @include font(2rem, 2.42rem, 400, normal);        
-    }
+
     .hero {
         background: url(../img/header/header-small.jpg);
         background-repeat: no-repeat;
-        background-position: center -81px;
+        background-position: -20px -81px;
+        
     }
 
     .hero-container{
-        padding-top: 78px;
-        padding-bottom: 125px;
-        padding-left: 60px;
-        width: 550px;    
+        padding-top: 65px;
+        padding-bottom: 150px;
+        padding-left: 0;
+        width: 390px;    
+    }
+
+    .hero__content{
+        padding-top: 34px;
+        padding-bottom: 33px;
+        @include font(2rem, 2.42rem, 400, normal);        
     }
 }

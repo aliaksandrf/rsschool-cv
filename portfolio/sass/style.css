@@ -223,6 +223,10 @@ a:hover::before {
 }
 
 @media (max-width: 768px) {
+  .wrapper {
+    padding: 0 60px;
+  }
+
   .title-container {
     max-width: 364px;
   }
@@ -398,6 +402,8 @@ a:hover::before {
 @media (max-width: 768px) {
   .header {
     justify-content: flex-end;
+    padding: 0 60px;
+    padding-top: 5px;
   }
 
   .header-container {
@@ -408,6 +414,7 @@ a:hover::before {
 
   .logo-icon {
     margin-right: auto;
+    margin-left: -10px;
   }
 
   .header__navigation {
@@ -415,7 +422,12 @@ a:hover::before {
   }
 
   .header__language {
-    padding-right: 25px;
+    padding-right: 23px;
+  }
+
+  .header__language_slash {
+    padding-right: 15px;
+    padding-top: 10px;
   }
 
   .adaptive__menu {
@@ -424,7 +436,8 @@ a:hover::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 63px;
+    margin-right: -5px;
+    padding-top: 2px;
     width: 50px;
     height: 50px;
   }
@@ -626,26 +639,26 @@ a:hover::before {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    background: url(../img/header/header-small.jpg);
+    background-repeat: no-repeat;
+    background-position: -20px -81px;
+  }
+
+  .hero-container {
+    padding-top: 65px;
+    padding-bottom: 150px;
+    padding-left: 0;
+    width: 390px;
+  }
+
   .hero__content {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 34px;
+    padding-bottom: 33px;
     font-size: 2rem;
     line-height: 2.42rem;
     font-weight: 400;
     font-style: normal;
-  }
-
-  .hero {
-    background: url(../img/header/header-small.jpg);
-    background-repeat: no-repeat;
-    background-position: center -81px;
-  }
-
-  .hero-container {
-    padding-top: 78px;
-    padding-bottom: 125px;
-    padding-left: 60px;
-    width: 550px;
   }
 }
 .portfolio__buttons-block {

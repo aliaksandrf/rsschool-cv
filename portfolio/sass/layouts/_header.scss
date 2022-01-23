@@ -63,6 +63,8 @@
 @media (max-width: 768px) {
     .header {
         justify-content: flex-end;
+        padding: 0 60px;
+        padding-top: 5px
     }
 
     .header-container{
@@ -73,6 +75,7 @@
 
     .logo-icon{
         margin-right: auto;
+        margin-left: -10px;
     }
 
 
@@ -81,7 +84,12 @@
     }
 
     .header__language{
-        padding-right: 25px;
+        padding-right: 23px;
+    }
+
+    .header__language_slash{
+        padding-right: 15px;
+        padding-top: 10px;
     }
 
     .adaptive__menu {
@@ -90,7 +98,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 63px;
+        margin-right: -5px;
+        padding-top: 2px;
         width: 50px;
         height: 50px;
         
