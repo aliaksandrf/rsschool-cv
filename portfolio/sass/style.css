@@ -453,8 +453,8 @@ a:hover::before {
     height: 1024px;
     right: 0;
     top: 0.1px;
-    padding-top: 134px;
-    padding-left: 127px;
+    padding-top: 117px;
+    padding-left: 60px;
     background-color: #000;
     z-index: 1;
     transition: 1.5s;
@@ -475,6 +475,7 @@ a:hover::before {
   }
 
   .side-menu__links {
+    margin-top: 16px;
     color: white;
     list-style: none;
     font-size: 3.5rem;
