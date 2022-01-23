@@ -304,6 +304,10 @@ a:hover::before {
 }
 
 @media (max-width: 768px) {
+  .footer-container {
+    padding-top: 0;
+  }
+
   .footer__content {
     font-size: 2rem;
     line-height: 2.42rem;
@@ -323,21 +327,22 @@ a:hover::before {
     line-height: 2.42rem;
     font-weight: 400;
     font-style: normal;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-left: 5px;
+  }
+
+  .footer__nav {
+    margin-left: -10px;
   }
 
   .footer__nav-item {
     display: inline-block;
     list-style: none;
-    padding-left: 20px;
-  }
-
-  .footer-container {
-    padding-top: 25px;
+    padding: 0 20px 0 0;
   }
 
   .footer__first-element {
-    padding-left: 40px;
+    padding-left: 5px;
   }
 }
 .header {
