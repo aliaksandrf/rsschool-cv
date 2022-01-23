@@ -601,8 +601,17 @@ a:hover::before {
 }
 
 @media (max-width: 768px) {
+  .contact {
+    padding-top: 95px;
+    background-image: url(../../img/contacts/contacts-small.jpg);
+    background-position: center 67px;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+
   .contact-container {
     margin: 0 auto;
+    padding-top: 10px;
   }
 
   .contact-title {
@@ -614,17 +623,13 @@ a:hover::before {
     text-align: center;
   }
 
+  .contact__form-container {
+    margin-top: -9px;
+  }
+
   .contact-form_button {
     width: 100%;
     text-align: center;
-  }
-
-  .contact {
-    padding-top: 100px;
-    background-image: url(../../img/contacts/contacts-small.jpg);
-    background-position: center 100px;
-    background-repeat: no-repeat;
-    height: 600px;
   }
 }
 .hero {
