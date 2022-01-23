@@ -72,4 +72,8 @@ a {
         @include font(3.2rem, 6.4rem, 400, normal);        
     }
 
+    h2 {
+        @include font(3.2rem, 4.022rem, 700, normal);
+    }
+
 }
