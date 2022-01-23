@@ -829,6 +829,14 @@ a:hover::before {
 }
 
 @media (max-width: 768px) {
+  .video {
+    padding-top: 6px;
+  }
+
+  .video__player {
+    padding-top: 40px;
+  }
+
   .video-player-big {
     display: none;
   }
