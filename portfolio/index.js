@@ -6,7 +6,8 @@ if(listener) {
 
 function toggleMenu() {
     listener.classList.toggle("open");
-    sidemenu.classList.toggle('close');
+    sidemenu.classList.toggle('close-menu');
+    sidemenu.classList.toggle('open-menu');
 }
 
 
