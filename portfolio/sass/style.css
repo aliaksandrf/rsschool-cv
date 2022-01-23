@@ -534,12 +534,14 @@ a:hover::before {
 
 @media (max-width: 768px) {
   .layout-3-column {
+    padding-top: 0;
     flex-direction: column;
     align-items: center;
   }
 
   .layout-4-column {
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 }
 .contact {
@@ -747,10 +749,26 @@ a:hover::before {
 }
 
 @media (max-width: 768px) {
+  .price {
+    padding-top: 7px;
+  }
+
   .price__card {
-    margin: 25px auto;
+    margin: 42px auto 8px;
     width: 420px;
     border: 3px solid #bdae82;
+  }
+
+  .price__card-title {
+    padding-top: 2px;
+  }
+
+  .price__card-costs {
+    margin-top: -8px;
+  }
+
+  .price__card_button {
+    padding-top: 35px;
   }
 }
 .skills__card-content {
