@@ -490,7 +490,7 @@ a:hover::before {
 
   .side-menu {
     position: absolute;
-    max-width: 620px;
+    width: 620px;
     height: 1024px;
     right: 0;
     top: 0.1px;
@@ -498,7 +498,6 @@ a:hover::before {
     padding-left: 60px;
     background-color: #000;
     z-index: 1;
-    transition: 1.5s;
   }
 
   .side-menu_a {
@@ -507,12 +506,12 @@ a:hover::before {
 
   .close-menu {
     right: -620px;
-    transition: 1.5s;
+    transition: 2.5s;
   }
 
   .open-menu {
     right: 0;
-    transition: 1.5s;
+    transition: 2.5s;
   }
 
   .side-menu__links {
@@ -533,6 +532,7 @@ a:hover::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 40px;
   padding-top: 20px;
 }

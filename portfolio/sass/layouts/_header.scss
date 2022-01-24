@@ -137,7 +137,7 @@
 
       .side-menu{          
           position: absolute;
-          max-width: 620px;
+          width: 620px;
           height: 1024px;
           right: 0;
           top: .1px;
@@ -145,7 +145,7 @@
           padding-left: 60px;
           background-color:  #000;
           z-index: 1;
-          transition: 1.5s;          
+                  
       }
 
       .side-menu_a{
@@ -154,12 +154,12 @@
 
       .close-menu{
          right: -620px;     
-         transition: 1.5s; 
+         transition: 2.5s; 
       }
 
       .open-menu {
         right: 0;     
-        transition: 1.5s; 
+        transition: 2.5s; 
       }
 
       .side-menu__links {
