@@ -31,13 +31,15 @@
     .skills__card-title{
         padding-top: 7px;
         padding-bottom: 0;
-        text-align: center;    
+        text-align: center; 
+        
     }
 
     .skills__card-content{
         @include font(1.8rem, 2.178rem, 400, normal);
 
         margin-top: -7px;
+        
 
         
     }
