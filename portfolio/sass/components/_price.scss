@@ -14,9 +14,7 @@
     @include font(2.4rem, 4.8rem, 700, normal);
     color: $color-gold;
     text-align: center;
-    margin-top: -5px;
-    
-    
+    margin-top: -5px;    
 }
 
 .price__card-content{
@@ -37,4 +35,37 @@
 
 
 
+
+
+@media (max-width: 768px) {
+    .price {
+        padding-top: 7px;
+    }
+
+
+    .price__card {
+        margin: 42px auto 8px;
+        max-width: 420px;
+        border: 3px solid $color-gold;
+    }
+
+    .price__card-title{
+        padding-top: 2px;
+        
+    }
+
+    .price__card-costs{
+        margin-top: -8px;    
+    }
+
+    .price__card_button{
+        padding-top: 35px;
+
+    }
+
+
+
+
+
+}
 

@@ -3,8 +3,7 @@
     background-image: url(../img/contacts/contacts.jpg);
     background-position: center 100px;
     background-repeat: no-repeat;
-    height: 800px;
-    
+    height: 800px;    
 }
 
 .contact-container{
@@ -52,5 +51,41 @@
 
 .contact-form_button{
     padding-top: 27px;
+}
+
+
+@media (max-width: 768px) {
+    .contact{
+        padding-top: 95px;
+        background-image: url(../../img/contacts/contacts-small.jpg);
+        background-position: center 67px;
+        background-repeat: no-repeat;
+        height: 700px;    
+    }
+
+    .contact-container{
+        margin: 0 auto;
+        padding-top: 10px
+    }
+
+    .contact-title{
+        @include font(3.2rem, 6.4rem, 700, normal);
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact__form-container{
+        margin-top: -9px;
+    }
+
+    .contact-form_button{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
 }
 
