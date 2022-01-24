@@ -689,6 +689,9 @@ a:hover::before {
   }
 }
 .portfolio__buttons-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 26px;
   max-width: 895px;
   margin: 0 auto;
@@ -702,6 +705,7 @@ a:hover::before {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio {
@@ -864,7 +868,7 @@ a:hover::before {
 }
 
 .video-player-big {
-  display: inline;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
