@@ -10,6 +10,11 @@ html {
     color: $color-light;
     @extend %font-primary;
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+body {
+    overflow-x: hidden;
 }
 
 
@@ -65,4 +70,15 @@ a {
             transition: .5s;
         }
     }    
+}
+
+@media (max-width: 768px) {
+    h1 {
+        @include font(3.2rem, 6.4rem, 400, normal);        
+    }
+
+    h2 {
+        @include font(3.2rem, 4.022rem, 700, normal);
+    }
+
 }
