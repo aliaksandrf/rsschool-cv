@@ -41,6 +41,10 @@ html {
   /* overflow-x: hidden; */
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 6rem;
   line-height: 12rem;
@@ -452,7 +456,7 @@ a:hover::before {
     align-items: center;
     margin-right: -5px;
     padding-top: 2px;
-    width: 50px;
+    max-width: 50px;
     height: 50px;
   }
   .adaptive__menu:hover {
@@ -486,7 +490,7 @@ a:hover::before {
 
   .side-menu {
     position: absolute;
-    width: 620px;
+    max-width: 620px;
     height: 1024px;
     right: 0;
     top: 0.1px;
@@ -563,7 +567,7 @@ a:hover::before {
 .contact-container {
   margin-left: auto;
   padding-top: 28px;
-  width: 450px;
+  max-width: 450px;
 }
 
 .contact-title {
@@ -580,7 +584,7 @@ a:hover::before {
 }
 
 .input-field {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #bdae82;
@@ -597,7 +601,7 @@ a:hover::before {
 }
 
 .contact-form_textarea {
-  width: 450px;
+  max-width: 450px;
   height: 100px;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #bdae82;
@@ -650,7 +654,7 @@ a:hover::before {
   padding-top: 120px;
   padding-bottom: 330px;
   padding-left: 60px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .hero__content {
@@ -672,7 +676,7 @@ a:hover::before {
     padding-top: 68px;
     padding-bottom: 150px;
     padding-left: 0;
-    width: 390px;
+    max-width: 390px;
   }
 
   .hero__content {
@@ -724,7 +728,7 @@ a:hover::before {
 }
 .price__card {
   padding: 12px 12px 40px 12px;
-  width: 450px;
+  max-width: 450px;
   border: 3px solid #bdae82;
 }
 
@@ -768,7 +772,7 @@ a:hover::before {
 
   .price__card {
     margin: 42px auto 8px;
-    width: 420px;
+    max-width: 420px;
     border: 3px solid #bdae82;
   }
 
@@ -791,7 +795,7 @@ a:hover::before {
   font-style: normal;
   margin-top: -7px;
   text-align: center;
-  width: 280px;
+  max-width: 280px;
 }
 
 .skills__card {
@@ -857,6 +861,10 @@ a:hover::before {
   fill: #bdae82;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.video-player-big {
+  display: inline;
 }
 
 @media (max-width: 768px) {

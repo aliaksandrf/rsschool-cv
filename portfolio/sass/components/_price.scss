@@ -1,6 +1,6 @@
 .price__card {
     padding: 12px 12px 40px 12px;
-    width: 450px;
+    max-width: 450px;
     border: 3px solid $color-gold;
 }
 
@@ -45,7 +45,7 @@
 
     .price__card {
         margin: 42px auto 8px;
-        width: 420px;
+        max-width: 420px;
         border: 3px solid $color-gold;
     }
 

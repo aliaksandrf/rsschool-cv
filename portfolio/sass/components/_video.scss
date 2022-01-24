@@ -29,6 +29,10 @@
     cursor: pointer;
 }
 
+.video-player-big{
+    display: inline;
+}
+
 @media (max-width: 768px) {
     .video {
         padding-top: 6px;
