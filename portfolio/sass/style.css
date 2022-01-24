@@ -413,7 +413,10 @@ a:hover::before {
   display: none;
 }
 
-.close-menu {
+/* .close-menu{
+    display: none;
+} */
+.side-menu {
   display: none;
 }
 
@@ -489,6 +492,7 @@ a:hover::before {
   }
 
   .side-menu {
+    display: block;
     position: absolute;
     width: 620px;
     height: 1024px;

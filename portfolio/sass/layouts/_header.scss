@@ -56,8 +56,13 @@
     display: none;
 }
 
-.close-menu{
+/* .close-menu{
     display: none;
+} */
+
+.side-menu {
+    display: none;
+
 }
 
 @media (max-width: 768px) {
@@ -136,6 +141,7 @@
 
 
       .side-menu{          
+          display: block;
           position: absolute;
           width: 620px;
           height: 1024px;
