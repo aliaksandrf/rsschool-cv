@@ -10,6 +10,7 @@ html {
     color: $color-light;
     @extend %font-primary;
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 }
 
 

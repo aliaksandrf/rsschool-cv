@@ -38,6 +38,7 @@ html {
   background: #000000;
   color: #ffffff;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -470,8 +471,8 @@ a:hover::before {
   }
 
   .adaptive__menu.open .line1 {
-    transform: rotate(45deg) translate(2px, 5px);
-    background-color: red;
+    transform: rotate(45deg) translate(5px, 10px);
+    width: 65px;
   }
 
   .adaptive__menu.open .line2 {
@@ -479,6 +480,7 @@ a:hover::before {
   }
 
   .adaptive__menu.open .line3 {
+    width: 65px;
     transform: rotate(-45deg) translate(5px, -10px);
   }
 
@@ -501,12 +503,12 @@ a:hover::before {
 
   .close-menu {
     right: -620px;
-    transition: 1s;
+    transition: 1.5s;
   }
 
   .open-menu {
     right: 0;
-    transition: 1s;
+    transition: 1.5s;
   }
 
   .side-menu__links {
@@ -547,6 +549,7 @@ a:hover::before {
   .layout-4-column {
     flex-wrap: wrap;
     padding-top: 20px;
+    justify-content: center;
   }
 }
 .contact {

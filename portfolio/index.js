@@ -1,13 +1,26 @@
 const listener = document.querySelector(".adaptive__menu");
-const sidemenu = document.querySelector('.side-menu')
+const sidemenu = document.querySelector('.side-menu');
+const sideMenuItem = document.querySelector('.side-menu__item');
+console.log(sideMenuItem);
 if(listener) {
     listener.addEventListener('click', toggleMenu);
+}
+
+if (sideMenuItem) {
+    sideMenuItem.addEventListener('click', sideMenu);
 }
 
 function toggleMenu() {
     listener.classList.toggle("open");
     sidemenu.classList.toggle('close-menu');
     sidemenu.classList.toggle('open-menu');
+}
+
+function sideMenu() {
+    listener.classList.toggle("open");
+    sidemenu.classList.toggle('close-menu');
+    sidemenu.classList.toggle('open-menu');
+
 }
 
 

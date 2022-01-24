@@ -121,8 +121,8 @@
     }
 
     .adaptive__menu.open .line1 {
-        transform: rotate(45deg) translate(2px, 5px);
-        background-color: red;
+        transform: rotate(45deg) translate(5px, 10px);
+        width: 65px;
       }
       
       .adaptive__menu.open .line2 {
@@ -130,6 +130,7 @@
       }
       
       .adaptive__menu.open .line3 {
+        width: 65px;
         transform: rotate(-45deg) translate(5px, -10px);
       }
 
@@ -153,12 +154,12 @@
 
       .close-menu{
          right: -620px;     
-         transition: 1s; 
+         transition: 1.5s; 
       }
 
       .open-menu {
         right: 0;     
-        transition: 1s; 
+        transition: 1.5s; 
       }
 
       .side-menu__links {
