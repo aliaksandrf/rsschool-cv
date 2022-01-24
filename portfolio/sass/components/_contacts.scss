@@ -9,7 +9,7 @@
 .contact-container{
     margin-left: auto;
     padding-top: 28px;
-    max-width: 450px;
+    width: 450px;
 }
 
 .contact-title{
@@ -28,7 +28,7 @@
 }
 
 .input-field{
-    max-width: 450px;
+    width: 450px;
     height: 50px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid $color-gold;
@@ -42,7 +42,7 @@
 }
 
 .contact-form_textarea{
-    max-width: 450px;
+    width: 450px;
     height: 100px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid $color-gold;
