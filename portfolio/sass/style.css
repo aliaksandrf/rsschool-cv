@@ -170,6 +170,7 @@ a:hover::before {
 }
 
 .button {
+  position: relative;
   width: 220px;
   height: 55px;
   font-size: 2rem;
@@ -185,6 +186,7 @@ a:hover::before {
 .button_colored:hover {
   color: #ffffff;
   transition: 0.5s;
+  box-shadow: inset -7em 0 0 0 blue, inset 7em 0 0 0 red;
 }
 
 .button_bordered {

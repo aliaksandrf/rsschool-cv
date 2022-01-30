@@ -1,3 +1,7 @@
+let lang = 'en';
+let theme = 'dark';
+
+
 const listener = document.querySelector(".adaptive__menu");
 const sidemenu = document.querySelector('.side-menu');
 const sideMenuItem = document.querySelector('.side-menu__item');
@@ -97,6 +101,7 @@ function getTranslate(event) {
         item.classList.remove("header__language_colored");
      });
     event.target.classList.add("header__language_colored");    
+    lang == 'en' ? 'ru' : 'en';
 }
 
 // dart-white theme (надо подумать по поводу переключения анимации кнопок в светлой теме и цвет шрифтов в кнопке)
@@ -111,6 +116,7 @@ const portfolioBtnForLight = document.querySelectorAll('.portfolio__button');
 const lightDark = document.querySelector(".light-icon");
 
 lightDark.addEventListener('click', () => {
+    theme == "dark" ? "light" : 'dark';
     console.log("dark-light");
     lightTheme.forEach((item) => {
         item.classList.toggle('light-theme');
@@ -130,3 +136,5 @@ lightDark.addEventListener('click', () => {
     });
 
 });
+
+
