@@ -23,5 +23,61 @@ function sideMenu() {
 
 }
 
+// js functional
 
-console.log("Вёрстка соответствует макету. Вёрстка соответствует макету. Ширина экрана 768px +48\nНи на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. +15 \nНа ширине экрана 768рх и меньше реализовано адаптивное меню +22 \n Успехов в прохождении курса!!!");
+/* const portfolioBtn = document.querySelector('.portfolio-btn111');
+const portfolioImage = document.querySelector('.portfolio-image111');
+
+portfolioBtn.addEventListener('click', () => {
+    console.log("ura");
+    portfolioImage.src = "../img/portfolio/winter/1.jpg";
+}); */
+
+const portfolioButtons = document.querySelector('.portfolio__buttons-block');
+const portfolioImages = document.querySelectorAll('.portfolio-image');
+const portfolioBtnForColored = document.querySelectorAll('.portfolio__button');
+
+
+portfolioButtons.addEventListener('click', changeImage);
+
+
+function changeImage(event) {
+    /* console.log('privet'); */
+    
+    if(event.target.classList.contains('button')) {
+        /* console.log('ura'); */
+        let dataset = event.target.dataset.season;
+        /* console.log(dataset); */
+        portfolioImages.forEach((img, index) => img.src = `../img/portfolio/${event.target.dataset.season}/${index + 1}.jpg`); 
+        console.log(portfolioButtons);
+
+        portfolioBtnForColored.forEach((item) => {
+            console.log(item.dataset.season);
+            item.classList.remove('button_colored');
+            item.classList.add('button_bordered');
+            if (item.dataset.season == event.target.dataset.season) {
+                item.classList.remove('button_bordered');
+                item.classList.add('button_colored');
+            }
+            
+        });
+
+    }
+}
+
+// cash images
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
+function preloadSummerImages() {
+    season.forEach((item) => {
+        for (let i = 1; i <= 6; i++) {
+            const img = new Image();
+            img.src = `../img/portfolio/${item}/$[i].jpg`;
+        }
+
+    });
+}
+
+preloadSummerImages();
+
+
+// translate page
