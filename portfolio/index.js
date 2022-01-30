@@ -91,13 +91,15 @@ preloadSummerImages();
 
 import i18Obj from "./translate.js";
 const language = document.querySelectorAll('.header__language'); // собрали коллекцию языков в виде двух переключателей
+const languageChoose = document.querySelectorAll('.header__language_choose');
 const langContent = document.querySelectorAll('[data-i18]'); // собрали коллекцию тегов с дата-атрибутами для смены языка
 language.forEach((item) => item.addEventListener('click', getTranslate)); // перебираем языки и запускаем при клике функцию
 function getTranslate(event) {
     langContent.forEach((item) => {
         item.textContent = i18Obj[event.target.innerText][item.dataset.i18]; // определяем язык ru/en через содержание тега + добавляем датаатрибут в нужном объекте           
     })
-    language.forEach((item) => {
+    
+    languageChoose.forEach((item) => {
         item.classList.remove("header__language_colored");
      });
     event.target.classList.add("header__language_colored");    
@@ -137,4 +139,24 @@ lightDark.addEventListener('click', () => {
 
 });
 
+
+// local storage
+/* window.addEventListener('beforeunload', setLocalStorage);
+window.addEventListener('load', getLocalStorage);
+
+function setLocalStorage() {
+    localStorage.setItem('lang', lang);
+    localStorage.setItem('theme', theme);
+
+}
+
+function getLocalStorage() {
+    if(localStorage.getItem('lang')) {
+        const lang = localStorage.getItem('lang');
+        getTranslate(lang);
+    }
+} */
+
+/* let lang = 'en';
+let theme = 'dark'; */
 
