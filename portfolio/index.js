@@ -68,10 +68,10 @@ function changeImage(event) {
 // cash images
 const seasons = ['winter', 'spring', 'summer', 'autumn'];
 function preloadSummerImages() {
-    season.forEach((item) => {
+    seasons.forEach((item) => {
         for (let i = 1; i <= 6; i++) {
             const img = new Image();
-            img.src = `../img/portfolio/${item}/$[i].jpg`;
+            img.src = `../img/portfolio/${item}/${i}.jpg`;
         }
 
     });
@@ -81,3 +81,17 @@ preloadSummerImages();
 
 
 // translate page
+
+import i18Obj from "./translate.js";
+const language = document.querySelectorAll('.header__language'); // собрали коллекцию языков в виде двух переключателей
+const langContent = document.querySelectorAll('[data-i18]'); // собрали коллекцию тегов с дата-атрибутами для смены языка
+language.forEach((item) => item.addEventListener('click', getTranslate)); // перебираем языки и запускаем при клике функцию
+function getTranslate(event) {
+    langContent.forEach((item) => {
+        item.textContent = i18Obj[event.target.innerText][item.dataset.i18]; // определяем язык ru/en через содержание тега + добавляем датаатрибут в нужном объекте           
+    })
+    language.forEach((item) => {
+        item.classList.remove("header__language_colored");
+     });
+    event.target.classList.add("header__language_colored");    
+}
