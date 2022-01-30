@@ -33,6 +33,9 @@ portfolioBtn.addEventListener('click', () => {
     portfolioImage.src = "../img/portfolio/winter/1.jpg";
 }); */
 
+
+//change photo in portfolio
+
 const portfolioButtons = document.querySelector('.portfolio__buttons-block');
 const portfolioImages = document.querySelectorAll('.portfolio-image');
 const portfolioBtnForColored = document.querySelectorAll('.portfolio__button');
@@ -95,3 +98,35 @@ function getTranslate(event) {
      });
     event.target.classList.add("header__language_colored");    
 }
+
+// dart-white theme (надо подумать по поводу переключения анимации кнопок в светлой теме и цвет шрифтов в кнопке)
+
+const lightTheme = [document.querySelector('.skills-container'), 
+                    document.querySelector('.portfolio'), 
+                    document.querySelector(".video"), 
+                    document.querySelector('.price')];
+const sectionTitle = document.querySelectorAll('.section-title');
+const portfolioBtnForLight = document.querySelectorAll('.portfolio__button');
+
+const lightDark = document.querySelector(".light-icon");
+
+lightDark.addEventListener('click', () => {
+    console.log("dark-light");
+    lightTheme.forEach((item) => {
+        item.classList.toggle('light-theme');
+
+    });
+    sectionTitle.forEach((item) => {
+        item.classList.toggle('section-title-light');
+        item.classList.toggle('section-title-light:before');
+        item.classList.toggle('section-title-light:after');
+    })
+
+    portfolioBtnForLight.forEach((item) =>{
+        if(!item.classList.contains('button_colored')) {
+            item.classList.toggle('button-light');
+        }       
+
+    });
+
+});

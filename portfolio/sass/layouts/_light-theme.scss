@@ -1,0 +1,22 @@
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+.section-title-light, 
+.section-title-light:before,
+.section-title-light:after {
+    color: #000;
+}
+
+
+.section-title-light:before,
+.section-title-light:after {
+    background: #000;
+}
+
+.button-light{
+    border-color: $color-gold;
+    background: #fff;
+    color: #000;
+}
