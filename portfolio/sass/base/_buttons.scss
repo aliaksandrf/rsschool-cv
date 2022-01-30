@@ -3,6 +3,12 @@
     width: 220px;
     height: 55px;
     @include font(2rem, 4rem, 400, normal);
+
+    &:hover{
+        transition: .5s;
+        box-shadow: inset -7em 0 0 0 blue, inset 7em 0 0 0 red;
+
+    }
 }
 
 
@@ -13,7 +19,7 @@
     &:hover{
         color: $color-light;
         transition: .5s;
-        box-shadow: inset -7em 0 0 0 blue, inset 7em 0 0 0 red;
+
     }
 }
 
