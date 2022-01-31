@@ -3,77 +3,50 @@ let theme = 'dark';
 
 
 const listener = document.querySelector(".adaptive__menu");
-const sidemenu = document.querySelector('.side-menu');
+const sideMenu = document.querySelector('.side-menu');
 const sideMenuItem = document.querySelector('.side-menu__item');
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
+const portfolioButtons = document.querySelector('.portfolio__buttons-block');
+const portfolioImages = document.querySelectorAll('.portfolio-image');
+const portfolioBtnForColored = document.querySelectorAll('.portfolio__button');
+const language = document.querySelectorAll('.header__language'); // собрали коллекцию языков в виде двух переключателей
+const languageChoose = document.querySelectorAll('.header__language_choose');
+const langContent = document.querySelectorAll('[data-i18]'); // собрали коллекцию тегов с дата-атрибутами для смены языка
+const lightTheme = [document.querySelector('.skills-container'), 
+                    document.querySelector('.portfolio'), 
+                    document.querySelector(".video"), 
+                    document.querySelector('.price')];
+const sectionTitle = document.querySelectorAll('.section-title');
+const lightDark = document.querySelector(".light-icon");
+
+
+//adaptive menu
 console.log(sideMenuItem);
 if(listener) {
     listener.addEventListener('click', toggleMenu);
 }
 
 if (sideMenuItem) {
-    sideMenuItem.addEventListener('click', sideMenu);
+    sideMenuItem.addEventListener('click', sideMenuFunc);
 }
 
 function toggleMenu() {
     listener.classList.toggle("open");
-    sidemenu.classList.toggle('close-menu');
-    sidemenu.classList.toggle('open-menu');
+    sideMenu.classList.toggle('close-menu');
+    sideMenu.classList.toggle('open-menu');
 }
 
-function sideMenu() {
+function sideMenuFunc() {
     listener.classList.toggle("open");
-    sidemenu.classList.toggle('close-menu');
-    sidemenu.classList.toggle('open-menu');
+    sideMenu.classList.toggle('close-menu');
+    sideMenu.classList.toggle('open-menu');
 
 }
 
-// js functional
-
-/* const portfolioBtn = document.querySelector('.portfolio-btn111');
-const portfolioImage = document.querySelector('.portfolio-image111');
-
-portfolioBtn.addEventListener('click', () => {
-    console.log("ura");
-    portfolioImage.src = "../img/portfolio/winter/1.jpg";
-}); */
-
-
-//change photo in portfolio
-
-const portfolioButtons = document.querySelector('.portfolio__buttons-block');
-const portfolioImages = document.querySelectorAll('.portfolio-image');
-const portfolioBtnForColored = document.querySelectorAll('.portfolio__button');
-
-
-portfolioButtons.addEventListener('click', changeImage);
-
-
-function changeImage(event) {
-    /* console.log('privet'); */
-    
-    if(event.target.classList.contains('button')) {
-        /* console.log('ura'); */
-        let dataset = event.target.dataset.season;
-        /* console.log(dataset); */
-        portfolioImages.forEach((img, index) => img.src = `../img/portfolio/${event.target.dataset.season}/${index + 1}.jpg`); 
-        console.log(portfolioButtons);
-
-        portfolioBtnForColored.forEach((item) => {
-            console.log(item.dataset.season);
-            item.classList.remove('button_colored');
-            item.classList.add('button_bordered');
-            if (item.dataset.season == event.target.dataset.season) {
-                item.classList.remove('button_bordered');
-                item.classList.add('button_colored');
-            }
-            
-        });
-
-    }
-}
+// end adaptive menu
 
 // cash images
-const seasons = ['winter', 'spring', 'summer', 'autumn'];
+
 function preloadSummerImages() {
     seasons.forEach((item) => {
         for (let i = 1; i <= 6; i++) {
@@ -86,13 +59,66 @@ function preloadSummerImages() {
 
 preloadSummerImages();
 
+// end cash images
+
+//change photo in portfolio
+portfolioButtons.addEventListener('click', changeImage);
+function changeImage(event) {
+    /* console.log('privet'); */
+    
+    if(event.target.classList.contains('button')) {
+        /* console.log('ura'); */
+        let dataset = event.target.dataset.season;
+        /* console.log(dataset); */
+        portfolioImages.forEach((img, index) => img.src = `../img/portfolio/${event.target.dataset.season}/${index + 1}.jpg`); 
+        console.log(portfolioButtons);
+
+        portfolioBtnForColored.forEach((item) => {
+            console.log(item.dataset.season);
+
+            if (theme == "dark") {
+                item.classList.remove('button_colored');
+                item.classList.remove('button-light_colored');
+                item.classList.add('button_bordered');
+                if (item.dataset.season == event.target.dataset.season) {
+                    item.classList.remove('button_bordered');
+                    item.classList.add('button_colored');
+                }
+            } else {
+                item.classList.remove('button_colored');
+                item.classList.remove('button-light_colored');
+                item.classList.add('button-light');
+                if (item.dataset.season == event.target.dataset.season) {
+                    item.classList.remove('button_bordered');
+                    item.classList.add('button-light_colored');
+                }
+            }            
+        });
+        }
+}
+
+// end change photo in portfolio
+
+// js functional
+
+/* const portfolioBtn = document.querySelector('.portfolio-btn111');
+const portfolioImage = document.querySelector('.portfolio-image111');
+
+portfolioBtn.addEventListener('click', () => {
+    console.log("ura");
+    portfolioImage.src = "../img/portfolio/winter/1.jpg";
+}); */
+
+
+
+
+
+
 
 // translate page
 
 import i18Obj from "./translate.js";
-const language = document.querySelectorAll('.header__language'); // собрали коллекцию языков в виде двух переключателей
-const languageChoose = document.querySelectorAll('.header__language_choose');
-const langContent = document.querySelectorAll('[data-i18]'); // собрали коллекцию тегов с дата-атрибутами для смены языка
+
 language.forEach((item) => item.addEventListener('click', getTranslate)); // перебираем языки и запускаем при клике функцию
 function getTranslate(event) {
     langContent.forEach((item) => {
@@ -103,23 +129,15 @@ function getTranslate(event) {
         item.classList.remove("header__language_colored");
      });
     event.target.classList.add("header__language_colored");    
-    lang == 'en' ? 'ru' : 'en';
+    lang == 'en' ? lang = 'ru' : lang = 'en';
 }
 
 // dart-white theme (надо подумать по поводу переключения анимации кнопок в светлой теме и цвет шрифтов в кнопке)
 
-const lightTheme = [document.querySelector('.skills-container'), 
-                    document.querySelector('.portfolio'), 
-                    document.querySelector(".video"), 
-                    document.querySelector('.price')];
-const sectionTitle = document.querySelectorAll('.section-title');
-const portfolioBtnForLight = document.querySelectorAll('.portfolio__button');
 
-const lightDark = document.querySelector(".light-icon");
 
 lightDark.addEventListener('click', () => {
-    theme == "dark" ? "light" : 'dark';
-    console.log("dark-light");
+    theme == "dark" ? theme = "light" : theme = 'dark';
     lightTheme.forEach((item) => {
         item.classList.toggle('light-theme');
 
@@ -130,18 +148,22 @@ lightDark.addEventListener('click', () => {
         item.classList.toggle('section-title-light:after');
     })
 
-    portfolioBtnForLight.forEach((item) =>{
+    portfolioBtnForColored.forEach((item) =>{
         if(!item.classList.contains('button_colored')) {
             item.classList.toggle('button-light');
         }       
 
     });
 
+    console.log(theme);
+
 });
 
 
+
+
 // local storage
-/* window.addEventListener('beforeunload', setLocalStorage);
+window.addEventListener('beforeunload', setLocalStorage);
 window.addEventListener('load', getLocalStorage);
 
 function setLocalStorage() {
@@ -153,9 +175,12 @@ function setLocalStorage() {
 function getLocalStorage() {
     if(localStorage.getItem('lang')) {
         const lang = localStorage.getItem('lang');
-        getTranslate(lang);
+        const theme = localStorage.getItem('theme')
+        if (lang == "light") {
+
+        }
     }
-} */
+}
 
 /* let lang = 'en';
 let theme = 'dark'; */

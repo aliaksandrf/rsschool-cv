@@ -38,6 +38,13 @@
     background: transparent;
 }
 
+.button-light_bordered {
+    background: $color-primary;
+    border: 1px solid $color-gold;
+    color: #000000;
+
+}
+
 
 @media (max-width: 768px) {
     .button{

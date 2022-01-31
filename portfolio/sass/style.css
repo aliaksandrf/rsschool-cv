@@ -207,6 +207,12 @@ a:hover::before {
   background: transparent;
 }
 
+.button-light_bordered {
+  background: #000000;
+  border: 1px solid #bdae82;
+  color: #000000;
+}
+
 @media (max-width: 768px) {
   .button {
     margin-top: 5px;
@@ -592,6 +598,11 @@ a:hover::before {
   border-color: #bdae82;
   background: #fff;
   color: #000;
+}
+
+.button-light_colored {
+  color: #fff;
+  background: #bdae82;
 }
 
 .contact {
