@@ -122,6 +122,7 @@ import i18Obj from "./translate.js";
 language.forEach((item) => item.addEventListener('click', getTranslate)); // перебираем языки и запускаем при клике функцию
 function getTranslate(event) {
     langContent.forEach((item) => {
+        console.log(event.target.innerText);
         item.textContent = i18Obj[event.target.innerText][item.dataset.i18]; // определяем язык ru/en через содержание тега + добавляем датаатрибут в нужном объекте           
     })
     
@@ -132,11 +133,26 @@ function getTranslate(event) {
     lang == 'en' ? lang = 'ru' : lang = 'en';
 }
 
+
+function getTranslateRu() {
+    langContent.forEach((item) => {
+        item.textContent = i18Obj.ru[item.dataset.i18]; // определяем язык ru/en через содержание тега + добавляем датаатрибут в нужном объекте           
+    })
+    
+     languageChoose.forEach((item) => {
+        item.classList.remove("header__language_colored");
+     });
+     document.querySelector("body > header > div > div.header__language > span:nth-child(3)").classList.add("header__language_colored");    
+    
+}
+
 // dart-white theme (надо подумать по поводу переключения анимации кнопок в светлой теме и цвет шрифтов в кнопке)
 
 
 
-lightDark.addEventListener('click', () => {
+lightDark.addEventListener('click', lightChange)
+
+function lightChange () {
     theme == "dark" ? theme = "light" : theme = 'dark';
     lightTheme.forEach((item) => {
         item.classList.toggle('light-theme');
@@ -155,9 +171,7 @@ lightDark.addEventListener('click', () => {
 
     });
 
-    console.log(theme);
-
-});
+};
 
 
 
@@ -173,13 +187,26 @@ function setLocalStorage() {
 }
 
 function getLocalStorage() {
-    if(localStorage.getItem('lang')) {
+    if(localStorage.getItem('theme')) {
         const lang = localStorage.getItem('lang');
         const theme = localStorage.getItem('theme')
-        if (lang == "light") {
-
+        if (theme == "light") {
+            lightChange();
+            console.log("tratata");
         }
     }
+
+    if(localStorage.getItem('lang')) {
+        const lang = localStorage.getItem('lang');
+        if (lang == "ru") {
+            getTranslateRu ();
+            
+            console.log("ututu");
+        }
+    }
+
+
+
 }
 
 /* let lang = 'en';
