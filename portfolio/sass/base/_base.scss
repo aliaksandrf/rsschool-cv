@@ -72,6 +72,8 @@ a {
     }    
 }
 
+
+
 @media (max-width: 768px) {
     h1 {
         @include font(3.2rem, 6.4rem, 400, normal);        
