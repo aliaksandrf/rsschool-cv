@@ -70,7 +70,7 @@ function changeImage(event) {
         /* console.log('ura'); */
         let dataset = event.target.dataset.season;
         /* console.log(dataset); */
-        portfolioImages.forEach((img, index) => img.src = `../img/portfolio/${event.target.dataset.season}/${index + 1}.jpg`); 
+        portfolioImages.forEach((img, index) => img.src = `./img/portfolio/${event.target.dataset.season}/${index + 1}.jpg`); 
         console.log(portfolioButtons);
 
         portfolioBtnForColored.forEach((item) => {
