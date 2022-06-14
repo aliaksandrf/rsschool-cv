@@ -111,7 +111,9 @@ a {
     
 }
 
-a:after {
+
+.list-link:after {
+
     display: block;
     position: absolute;
     bottom: -2px;
@@ -142,4 +144,18 @@ a:hover:after, a:focus:after {
 pre {
     text-align: left;
 }
+
+rsshool-cv-stage0
+.image {
+    display: block;
+    width: 300px;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
 
