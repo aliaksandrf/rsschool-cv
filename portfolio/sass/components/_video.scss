@@ -1,0 +1,56 @@
+.video__player{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.video-player-small{
+    display: none;
+}
+
+.button-svg{
+    position: absolute;    
+    display: inline-block;
+    
+
+}
+
+.svg-video{
+    width: 130px;
+    height: 130px;
+    fill: #ffffff;   
+}
+
+.svg-video:hover{
+    fill: $color-gold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.video-player-big{
+    max-width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    .video {
+        padding-top: 6px;
+    }
+
+    .video__player{
+        padding-top: 40px;
+    }
+
+    .video-player-big{
+        display: none;
+    }
+
+    .video-player-small{
+        display: inline;
+    }
+}
+
+
+

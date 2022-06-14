@@ -1,0 +1,78 @@
+.price {
+    padding-bottom: 100px;
+}
+
+
+
+
+.price__card {
+    padding: 12px 12px 40px 12px;
+    width: 450px;
+    border: 3px solid $color-gold;
+}
+
+.price__card-title{
+    padding-top: 2px;
+    
+}
+
+.price__card-costs{
+    @extend %font-add;
+    @include font(2.4rem, 4.8rem, 700, normal);
+    color: $color-gold;
+    text-align: center;
+    margin-top: -5px;    
+}
+
+.price__card-content{
+    display: block;
+    @include font(1.8rem, 3.6rem, 400, normal);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.price__card_button{
+    padding-top: 38px;
+    text-align: center;
+}
+
+.price__card_content-block{
+    margin-top: -5px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .price {
+        padding-top: 7px;
+    }
+
+
+    .price__card {
+        margin: 42px auto 8px;
+        max-width: 420px;
+        border: 3px solid $color-gold;
+    }
+
+    .price__card-title{
+        padding-top: 2px;
+        
+    }
+
+    .price__card-costs{
+        margin-top: -8px;    
+    }
+
+    .price__card_button{
+        padding-top: 35px;
+
+    }
+
+
+
+
+
+}
+

@@ -1,0 +1,47 @@
+.portfolio__buttons-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 26px;
+    max-width: 895px;
+    margin: 0 auto;
+}
+
+.portfolio__image{
+    padding-top: 60px;
+}
+
+.portfolio__image{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio{
+    margin-top: -8px;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding-top: 72px;
+    }
+
+    .portfolio__buttons-block{
+        padding-top: 40px;
+    }
+
+
+
+    .portfolio__image{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .portfolio__buttons-block{        
+        max-width: 445px;        
+    }
+
+
+}
