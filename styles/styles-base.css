@@ -1,0 +1,41 @@
+.html {
+    font-size: 10px;
+    
+
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.wrapper {
+    margin: auto;
+    max-width: 1200px;
+}
+
+body {
+    background: #e6e2d4;
+    font-family: 'Open Sans', Verdana, sans-serif;   
+    
+
+}
+
+
+.column-left {
+    background: #fff5c0;
+    width: 30%;
+}
+
+.column-right {
+    width: 70%;
+    padding: 1rem;
+}
+
+.section-title {
+    margin-left: 15px;
+    text-decoration: underline;
+}

@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+    font-size: 18px;
+    color:#000000;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #E4DDDD;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side  {
+    width: 35%;
+}
+
+.right-side {
+    width: 65%;
+    padding-left: 20px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.list-item{
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list-item {
+    padding: 0 15px;
+    line-height: 40px;
+}
+
+.header, .footer {
+    background: #6CEA7A;
+}
+
+.navigation {
+    padding: 0;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+}
+
+h2:hover{
+    color: #6CEA7A;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+h2:hover::after {
+    
+    content: "";
+    position: absolute;
+    background: #6CEA7A;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    transition: all 1s;
+}
+
+
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.list-link:after {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    content: "";    
+    transition: width .5s ease-out;
+}
+
+a:hover:after, a:focus:after {
+    width: 100%;
+}
+
+.page-title{
+    text-decoration: underline;
+}
+
+.section {
+    border-bottom: 2px solid #000000;
+}
+
+.section:last-child{
+    border-bottom: none;
+}
+
+pre {
+    text-align: left;
+}
+
+.image {
+    display: block;
+    width: 300px;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
