@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliaksandrf/rsschool-cv.git"
+  },
+  "author": "Aliaksandr Fedukovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliaksandrf/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/aliaksandrf/rsschool-cv#readme"
+}
