@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV RSSchool stage0 2022</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper header">
+            <div class="wrapper1">
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu" class="section-title"></label>
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+                <nav class="main-menu">
+                    <a href="#contacts" class="burger-link">Contacts</a>
+                    <a href="#skills" class="burger-link">Skills</a>
+                    <a href="#language" class="burger-link">Language</a>
+                    <a href="#about-me" class="burger-link">About me</a>
+                    <a href="#education-section" class="burger-link">Education</a>
+                    <a href="#key-skills" class="burger-link">Key skills</a>
+                    <a href="#sample-code" class="burger-link">Sample code</a>
+                 </nav>
+            </div>
+            <div class="column-left">
+                <figure>
+                    <img src="./image/header/never-give-up-212x300.jpg" alt="avatar" class="header__photo">
+                    <figcaption class="figcaption-image">Never give up</figcaption>
+                </figure>
+            </div>
+            <div class="header__second-column column-right">
+                <h1>Fedukovich Aliaksandr</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper main">
+            <div class="main__left-column column-left">
+                <div class="classXZ">
+                    <section class="section-block">
+                        <h2 class="contacts__title section-title" id="contacts">Contacts</h2>
+                        <nav>
+                            <ul>
+                                <li class="contacts__list">
+                                    <a href="phone:+375296107461" class="link-content">Phone: +375(29)6107461</a>
+                                </li>
+                                <li class="contacts__list">
+                                    <a href="mailto:1632637@mail.ru" class="link-content">e-mail: 1632637@mail.ru</a>
+                                </li>
+                                <li class="contacts__list">
+                                    <a href="https://telegram.me/aliaksandrF" class="link-content">
+                                        <span class="contact__content">Telegram: @aliaksandrf</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="education section" id="education-section">
+                        <h2 class="section-title">Education</h2>
+                        <ul>
+                            <li>higher education. (mechanical engineering)</li>
+                            <li>master's degree (mechanical engineering)</li>
+                        </ul>
+                    </section>
+                    <section class="hard-skills section" id="hard-skills">
+                        <h2 class="section-title">Hard skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Git</li>
+                            <li>Sass</li>
+                        </ul>
+                    </section>
+                    <section class="section-block">
+                        <h2 class="section-skills section-title" id="language">Language</h2>
+
+                        <ul>
+                            <li>purposeful</li>
+                            <li>communicative</li>
+                            <li>fast learner</li>
+                            <li>responsible</li>
+                            <li>perseverance</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="main-right-column column-right">
+                    <section class="about-me">
+                        <h2 class="section-title" id="about-me">Some words about me</h2>
+                        <p class="about-me__content"> Hi, at the beginning of September 2021, I am just starting my journey
+                        into the world of JavaScript and beyond. Of course, a lot of difficulties
+                        and difficulties await here, but this path is real. My dedication, perseverance,
+                        desire to learn something new and, I hope, technical higher education and master's
+                        degree will help me in this. Also, the ability to switch and relax after a busy day
+                        reading an interesting book or while jogging will help me here.</p>
+                    </section>
+                    <section class="education">
+                        <h2 class="section-title" id="education-section1">Education</h2>
+                        <ul>
+                            <li>2004-2006 - Polotsk State University (mechanical engineering faculty, master's degree)</li>
+                            <li>1999-2004 - Polotsk State University (mechanical engineering faculty)</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right-side">
+                    <section class="about section" id="about">
+                        <h2 class="section-title">Brief information about me</h2>
+                        <p>Hi, at the beginning of 2022, I am just starting my journey into the world of JavaScript
+                            and beyond. Of course, a lot of difficulties and difficulties await here, but this path is
+                             real. My dedication, perseverance, desire to learn something new and, I hope, technical
+                             higher education and master's degree will help me in this. Also, the ability to switch and
+                             relax after a busy day reading an interesting book or while jogging will help me here.</p>
+                    </section>
+                    <section class="code-example">
+                        <h2 class="section-title" id="sample-code">Sample code</h2>
+                            <pre><code class="JavaScript">
+            function myLanguages(results) {
+                let arr = [];
+                for (let key in results) {
+                    if (results[key] = 60) arr.push([key, results[key]]);
+                }
+                arr = arr.sort((a, b) = b[1] - a[1]);
+                let result = [];
+                for (let i = 0; i &lt; arr.length; i++) {
+                    result.push(arr[i][0]);
+                }
+                return result;
+                }
+                            </code></pre>
+                    </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper footer">
+            <div class="footer__element">
+                <a href="https://github.com/aliaksandrf/">
+                    <img src="./image/footer/github-logo_icon-icons.com_73546.png" alt="GitHub">
+                </a>
+            </div>
+            <div>
+                <time class="footer__content">2021</time>
+            </div>
+            <div class="footer__element">
+                <a href="https://rs.school/js/">
+                    <img src="./image/footer/rs_school_js.svg" alt="RSSchool" width="200">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

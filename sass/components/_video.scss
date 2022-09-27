@@ -1,0 +1,23 @@
+.video__player{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+}
+
+
+.svg-video{
+    position: absolute;    
+    background-image: url(/img/svg-icons/Play_hover.svg);
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+   
+}
+
+.svg-video:hover{
+    fill: $color-gold;
+    cursor: pointer;
+}
+

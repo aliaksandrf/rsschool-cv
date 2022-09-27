@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 3px;
+
+}
+
+.header-container{
+    background-image: url(/img/header/background-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.header__links{
+    padding: 0 15px;
+    @include font(2rem, 5rem, 400, normal);
+    list-style: none;
+}
+
+.header__language_choose{
+    @include font(2rem, 5rem, 400, normal);
+}
+
+.header__language_colored {
+    color: $color-gold;
+}
+
+.navigation-item{
+    display: flex;
+}
+
+.header__navigation {
+    margin-left: auto;
+    margin-right: 14px;
+}
+
+.header__language_slash{
+    padding: 0 8px;
+}
+
+.hero__button{
+    margin-top: 5px;
+}
