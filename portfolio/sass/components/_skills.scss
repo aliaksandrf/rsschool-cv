@@ -1,0 +1,50 @@
+.skills__card-content{
+    @include font(1.8rem, 3.6rem, 400, normal);
+    margin-top: -7px;
+    text-align: center;
+    max-width: 280px;
+    
+}
+
+.skills__card {
+    max-width: 320px;
+    padding: 0 20px;
+    margin-top: 7px;
+}
+
+.skills__card-title{
+    padding: 23px 20px 0;
+    text-align: center;    
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding-top: 5px;
+    }
+    .skills__card {
+        max-width: 300px;
+        padding: 0;
+        padding-top: 10px;
+
+    }
+
+    .skills__card-title{
+        padding-top: 7px;
+        padding-bottom: 0;
+        text-align: center; 
+        
+    }
+
+    .skills__card-content{
+        @include font(1.8rem, 2.178rem, 400, normal);
+
+        margin-top: -7px;
+        
+
+        
+    }
+
+
+
+}
+
