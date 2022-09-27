@@ -124,9 +124,9 @@
             function myLanguages(results) {
                 let arr = [];
                 for (let key in results) {
-                    if (results[key] >= 60) arr.push([key, results[key]]);
+                    if (results[key] = 60) arr.push([key, results[key]]);
                 }
-                arr = arr.sort((a, b) => b[1] - a[1]);
+                arr = arr.sort((a, b) = b[1] - a[1]);
                 let result = [];
                 for (let i = 0; i &lt; arr.length; i++) {
                     result.push(arr[i][0]);
